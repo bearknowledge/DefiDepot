@@ -10,16 +10,10 @@ function Last7Days () {
   var result = [];
    
     for (var i=0; i<6; i++) {
-        let hour;
         var d = new Date();
-        const CurrentHour = d.getHours() - (2 * i);
-        if(CurrentHour > 12 ) {hour = (CurrentHour - 12) + ":00 PM" }
-        if(CurrentHour <= 12 ) {hour = CurrentHour + ":00 AM" }
-      
-
-      
-    
-        result.push( hour )
+        const CurrentDay = d.getDate() - (2 * i);
+        const CurrentMonth = d.getMonth();
+        result.push(CurrentMonth + "/" + CurrentDay)
     }
     return(result.reverse());
    
@@ -75,6 +69,7 @@ const interval = Last7Days();
         reverse: false
     }}
     yFormat=" >-.2f"
+    curve='cardinal'
     axisTop={null}
     axisRight={null}
     axisBottom={{
