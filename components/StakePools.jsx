@@ -18,9 +18,9 @@ export const StakePools = ({ positions }) => {
 	return (
 		<a>
 			{width >= screens.tablet ? (
-				<div className="flex flex-row grid grid-cols-7 text-[12px] rounded-[40px] w-full bg-[#0C1615] text-white font-Inter items-center justify-between py-4 px-8 my-[.5rem]">
+				<div className="flex flex-row grid grid-cols-7 text-[12px] rounded-lg w-full bg-[#0C1615] text-white font-Inter items-center justify-between py-3 px-5 my-[.5rem] hover:opacity-70">
 					<span className="flex flex-row col-span-2 font-SG text-sm justify-center items-center ">
-						<img className="w-[15%] mr-2" src={positions?.logo} />
+						<img className="w-[20px] mr-2" src={positions?.logo} />
 						{positions?.name}
 					</span>
 
