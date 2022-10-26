@@ -34,10 +34,10 @@ const allPools:any [] = [
 ];
 
 return (
-  <div className="flex flex-col justify-center w-[90%] mb-10">
+  <div className="flex mb-10 mobile:w-full laptop:flex-col justify-center laptop:w-[90%]">
     <div className="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-3 w-full">
     {Token === -1 ?
-     <span className="w-full h-[22rem] bg-[#FFF6E4] rounded-lg shadow p-6">
+     <span className="w-full h-[22rem] bg-[#FFF6E4] rounded-lg shadow p-6 mobile:col-span-2">
        <h1>Staking Pools Available</h1>
 
         <StakePoolTable>
@@ -63,7 +63,7 @@ return (
         <StakeTab token={allPools[Token]}/>
       </span> }
 
-      <span className="text-lg w-full h-[22rem] bg-[#FFF6E4] rounded-lg shadow p-6">
+      <span className="text-lg w-full h-[22rem] bg-[#FFF6E4] rounded-lg shadow p-6 mobile:col-span-2">
         <div className='flex flex-1 flex-col'>
         <h1 className='text-2xl'>My Total Balance</h1>
         <h1 className='font-bold text-2xl'>$1,000,000</h1>

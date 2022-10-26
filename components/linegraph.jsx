@@ -23,32 +23,32 @@ const interval = Last7Days();
 
   const data = [{
     
-      "id": "price",
+      "id": "value",
       "color": "hsl(138, 70%, 50%)",
       "data": [
         {
           "x": interval[0],
-          "y": 182
+          "y": "1200 M"
         },
         {
           "x": interval[1],
-          "y": 141
+          "y": "1150 M"
         },
         {
           "x": interval[2],
-          "y": 159
+          "y": "1050 M"
         },
         {
           "x": interval[3],
-          "y": 143
+          "y": "927 M"
         },
         {
           "x": interval[4],
-          "y": 33
+          "y": "915 M"
         },
         {
           "x": interval[5],
-          "y": 147
+          "y": "920 M"
         },
       ]
     
@@ -85,7 +85,7 @@ const interval = Last7Days();
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: 'Price',
+        legend: 'Value (millions)',
         legendOffset: -45,
         legendPosition: 'middle'
     }}
