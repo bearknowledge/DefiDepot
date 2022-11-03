@@ -54,8 +54,8 @@ return (
                 return <button className='' onClick={() => setToken(index)}><StakePools positions={el} /></button>
               })}
         </StakePoolTable>
-      </span> : <span className="w-full h-[22rem] bg-black rounded-lg shadow p-6">
-        <button onClick={() => setToken(-1)} className='text-white'>X</button>
+      </span> : <span className="w-full h-[22rem] bg-black rounded-lg shadow p-3 col-span-2">
+        <button onClick={() => setToken(-1)} className='text-white px-2'>X</button>
         <StakeTab token={allPools[Token]}/>
       </span> }
 
