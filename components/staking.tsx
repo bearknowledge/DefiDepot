@@ -26,11 +26,7 @@ const allPools:any [] = [
   {logo: "/eth.png",
   name: "ETH",
   apy: "3.75%",
-  bonus: "4.2%"},
-  {logo: "/fuel.png",
-  name: "FUEL",
-  apy: "10.4%",
-  bonus: "7.7%"},
+  bonus: "4.2%"}
 ];
 
 return (
@@ -93,13 +89,7 @@ return (
        
       </span>
 
-      <span className="w-full h-[22rem] bg-[#FFF6E4] rounded-lg p-6 shadow col-span-2">
-        <div>
-          <h1>Total Value Locked</h1>
-          <h1>$1,773,246</h1>
-          <Linegraph />
-        </div>
-      </span>
+    
     </div>
   </div>
 );

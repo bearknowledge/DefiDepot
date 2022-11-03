@@ -1,8 +1,8 @@
 export const Nav = () => {
   return (
-    <div className="flex mobile:flex-row bg-[black] mobile:w-full h-[80px] items-center justify-between laptop:flex-col laptop:h-screen laptop:w-fit justify-between p-4 z-10 bg-[black] sticky top-0 text-white">
-      <div className="flex mobile:text-sm pt-0 laptop:flex-row items-center text-xl pt-10">
-        <img className="h-[3rem] mr-2" src="/truck.svg" />
+    <div className="flex mobile:flex-row bg-[black] mobile:w-full h-[80px] mobile:items-center justify-between laptop:flex-col laptop:h-screen laptop:w-fit justify-between p-4 z-10 bg-[black] sticky top-0 text-white">
+      <div className="flex flex-row items-center mobile:text-sm pt-0 laptop:text-xl laptop:pt-10">
+        <img className="mobile:h-[2rem] laptop:h-[3rem] mr-2" src="/truck.svg" />
         DeFi Depot
       </div>
 
