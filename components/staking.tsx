@@ -25,8 +25,8 @@ const skeletonArray = [1, 2, 3];
 const allPools:any [] = [
   {logo: "/eth.png",
   name: "ETH",
-  apy: "3.75%",
-  bonus: "4.2%"}
+  apy: 3.75,
+  bonus: 4.2}
 ];
 
 return (
